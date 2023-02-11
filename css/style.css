@@ -366,7 +366,7 @@ button > a:hover {
   align-items: center;
   justify-content: center;
   /* transform: scale(0);
-    transition: all 0.4s ease; */
+      transition: all 0.4s ease; */
 }
 
 @media screen and (min-width: 300px) and (max-width: 750px) {
@@ -518,22 +518,22 @@ button > a:hover {
 }
 
 .mission {
-  width: 50%;
+  width: 100%;
   background: #000;
   border: solid 8px #fff;
   padding: 50px;
   text-align: center;
-  line-height: 3.5rem;
+  /* line-height: 3.5rem; */
   letter-spacing: 0.2rem;
 }
 
 .vision {
-  width: 50%;
+  width: 100%;
   background: #000;
   border: solid 8px #fff;
   padding: 50px;
   text-align: center;
-  line-height: 3.5rem;
+  /* line-height: 3.5rem; */
   letter-spacing: 0.2rem;
 }
 
@@ -567,7 +567,7 @@ button > a:hover {
   justify-content: center;
   align-items: center;
   background-image: linear-gradient(to right, #000, rgba(0, 0, 0, 0.5)),
-    url("../images/home-banner.jpg");
+    url("../images/header-banner/home-banner.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -582,6 +582,7 @@ button > a:hover {
   align-items: center;
   padding: 20px 90px;
   letter-spacing: 0.2rem;
+  line-height: 4rem;
   /* border: solid 1px red; */
 }
 
@@ -639,8 +640,131 @@ button > a:hover {
     font-size: 2em;
   }
 }
-
 /* End About Event */
+
+/* Topics */
+#topic {
+  /* border: solid 1px yellowgreen; */
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("../images/header-banner/videobg-cover.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  padding: 30px 0;
+}
+
+.container-card-topics {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  /* border-radius: 50%;
+  border: solid red 1px; */
+}
+
+.topic-data {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: space-around;
+  /* width: 350px;
+  height: 500px; */
+  /* border: solid red 1px; */
+}
+
+.card-topic {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  /* margin: 10px auto; */
+}
+
+@media screen and (min-width: 280px) and (max-width: 750px) {
+  .card-topic {
+    margin-top: 80px;
+  }
+}
+
+.cards-topics-1 {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url("../images/violence/images\ \(9\).jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 10px 20px 15px rgba(0, 0, 0, 0.6);
+}
+
+.cards-topics-2 {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url("../images/violence/desperate-2048905_1920.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 10px 20px 15px rgba(0, 0, 0, 0.6);
+}
+
+.cards-topics-3 {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url("../images/violence/istockphoto-520546514-612x612.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 10px 20px 15px rgba(0, 0, 0, 0.6);
+}
+
+.cards-topics-4 {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url("../images/violence/iphone-g125e81f8f_640.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 10px 20px 15px rgba(0, 0, 0, 0.6);
+}
+
+.topic-title {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-items: center;
+  /* border: solid 1px yellowgreen; */
+}
+
+.topic-title > h4 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.topic-title > p {
+  font-size: 18px;
+}
+/* End Topics */
 
 /* Calendar Event */
 #calendar {
@@ -773,7 +897,7 @@ button > a:hover {
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.6)
     ),
-    url("../images/bg-1.jpg");
+    url("../images/header-banner/bg-1.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -853,7 +977,7 @@ button > a:hover {
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.6)
     ),
-    url("../images/event/56899538_642220166223715_5736610001326178304_n.jpg");
+    url("../images/event/bowie-in-manchester-by-akse-p19.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1061,30 +1185,6 @@ button > a:hover {
 }
 /* End Blog */
 
-/* Start Promo */
-/* .container-promo {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-  background-image: linear-gradient(to right, #000, rgba(0, 0, 0, 0.5)),
-    url("../images/event/danny-howe-1346754-unsplash.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  padding: 80px 0;
-}
-
-.container-textb {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
-  margin: 20px auto;
-} */
-/* End Promo */
-
 /* Sponsor */
 #sponsor {
   padding: 30px 0;
@@ -1205,7 +1305,6 @@ button > a:hover {
 /* End of FAQ Accordion*/
 
 /* Footer */
-
 .contact-box-footer {
   display: flex;
   flex-flow: column wrap;
